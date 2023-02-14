@@ -24,7 +24,7 @@ public class ParameterController {
     @GetMapping("/query")
     public ResponseEntity<ParameterModel> query(@RequestParam String key) {
         Optional<ParameterModel> optParameter = parameterRepository.findById(key);
-        if(optParameter.isEmpty()){
+        if (optParameter.isEmpty()) {
             return ResponseEntity.notFound().build();
         }
 

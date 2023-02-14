@@ -9,7 +9,7 @@ public class StatusController {
 
     @GetMapping("/api/status")
     public ResponseEntity<String> status() {
-        return  ResponseEntity.ok("online");
+        return ResponseEntity.ok("online");
     }
 
 }
